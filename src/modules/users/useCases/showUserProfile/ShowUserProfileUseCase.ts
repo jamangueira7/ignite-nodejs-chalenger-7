@@ -1,7 +1,7 @@
 import { injectable, inject } from "tsyringe";
 
-import { IUsersRepository } from "../../repositories/IUsersRepository";
-import { ShowUserProfileError } from "./ShowUserProfileError";
+import { IUsersRepository } from '@modules/users/repositories/IUsersRepository';
+import { ShowUserProfileError } from '@modules/users/useCases/showUserProfile/ShowUserProfileError';
 
 @injectable()
 export class ShowUserProfileUseCase {
