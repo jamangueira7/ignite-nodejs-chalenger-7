@@ -19,10 +19,11 @@ describe("Show User Profile Controller", () => {
   }
 
   beforeAll( async() => {
-    db = await createConnection()
-    await db.runMigrations()
 
-  })
+    db = await createConnection();
+    await db.runMigrations();
+
+  });
 
   afterAll(async () => {
     await db.dropDatabase();
