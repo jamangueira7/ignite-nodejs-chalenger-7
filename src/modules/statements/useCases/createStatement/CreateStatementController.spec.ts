@@ -1,5 +1,6 @@
 import request from 'supertest';
 import { Connection, createConnection } from 'typeorm';
+
 import jwt from 'jsonwebtoken';
 import { v4 as uuid } from 'uuid';
 
@@ -32,7 +33,7 @@ describe("Create Statement Use Case", () => {
 
   const userData: ICreateUserDTO = {
     name: "Test Admin",
-    email: "admin@test.com",
+    email: "admin-stat@test.com",
     password: "123456"
   }
 
@@ -102,7 +103,7 @@ describe("Create Statement Use Case", () => {
 
   it("should be able to create a new statement", async () => {
 
-    await request(app).post("/api/v1/users").send(userData);
+    const user = await request(app).post("/api/v1/users").send(userData);
 
     const responseAuthenticate = await request(app).post("/api/v1/sessions").send({
       email: userData.email,
@@ -150,5 +151,5 @@ describe("Create Statement Use Case", () => {
     expect(response.status).toBe(404);
 
   });
-  
+
 });

@@ -4,11 +4,11 @@ import {
   Entity,
   JoinColumn,
   ManyToOne,
-  PrimaryGeneratedColumn
+  PrimaryColumn
 } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-import { User } from '../../users/entities/User';
+import { User } from '@modules/users/entities/User';
 
 enum OperationType {
   DEPOSIT = 'deposit',
@@ -17,7 +17,7 @@ enum OperationType {
 
 @Entity('statements')
 export class Statement {
-  @PrimaryGeneratedColumn('uuid')
+  @PrimaryColumn()
   id?: string;
 
   @Column('uuid')

@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { BalanceMap } from '../../mappers/BalanceMap';
-import { GetBalanceUseCase } from './GetBalanceUseCase';
+import { BalanceMap } from '@modules/statements/mappers/BalanceMap';
+import { GetBalanceUseCase } from '@modules/statements/useCases/getBalance/GetBalanceUseCase';
 
 export class GetBalanceController {
   async execute(request: Request, response: Response) {

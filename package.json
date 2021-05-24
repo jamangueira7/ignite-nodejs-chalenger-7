@@ -1,12 +1,12 @@
 {
-  "name": "challenge-01",
+  "name": "challenge-02",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "test": "jest -i --detectOpenHandles"
+    "test": "jest --detectOpenHandles --runInBand"
   },
   "dependencies": {
     "@types/jest": "^26.0.23",

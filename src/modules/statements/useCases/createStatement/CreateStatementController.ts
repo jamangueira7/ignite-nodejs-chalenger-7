@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { CreateStatementUseCase } from './CreateStatementUseCase';
+import { CreateStatementUseCase } from '@modules/statements/useCases/createStatement/CreateStatementUseCase';
 
 enum OperationType {
   DEPOSIT = 'deposit',

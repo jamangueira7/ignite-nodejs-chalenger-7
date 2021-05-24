@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
-import { ProfileMap } from '../../mappers/ProfileMap';
-import { ShowUserProfileUseCase } from './ShowUserProfileUseCase';
+import { ProfileMap } from '@modules/users/mappers/ProfileMap';
+import { ShowUserProfileUseCase } from '@modules/users/useCases/showUserProfile/ShowUserProfileUseCase';
 
 export class ShowUserProfileController {
   async execute(request: Request, response: Response) {

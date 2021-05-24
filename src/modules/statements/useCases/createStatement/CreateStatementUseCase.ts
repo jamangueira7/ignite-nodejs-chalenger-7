@@ -1,9 +1,9 @@
 import { inject, injectable } from "tsyringe";
 
-import { IUsersRepository } from "../../../users/repositories/IUsersRepository";
-import { IStatementsRepository } from "../../repositories/IStatementsRepository";
-import { CreateStatementError } from "./CreateStatementError";
-import { ICreateStatementDTO } from "./ICreateStatementDTO";
+import { IUsersRepository } from '@modules/users/repositories/IUsersRepository';
+import { IStatementsRepository } from '@modules/statements/repositories/IStatementsRepository';
+import { CreateStatementError } from '@modules/statements/useCases/createStatement/CreateStatementError';
+import { ICreateStatementDTO} from '@modules/statements/useCases/createStatement/ICreateStatementDTO';
 
 @injectable()
 export class CreateStatementUseCase {

@@ -24,7 +24,7 @@ describe("Authenticate User Use Case", () => {
 
   const userData: ICreateUserDTO = {
     name: "Test Admin",
-    email: "admin@test.com",
+    email: "admin-auth@test.com",
     password: "123456"
   }
 

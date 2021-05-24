@@ -25,7 +25,7 @@ describe("Create User Controller", () => {
 
   const userData: ICreateUserDTO = {
     name: "Test User",
-    email: "user@test.com",
+    email: "user-create@test.com",
     password: "123456"
   }
 

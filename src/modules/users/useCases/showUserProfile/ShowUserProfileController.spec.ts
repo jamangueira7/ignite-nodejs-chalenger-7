@@ -32,7 +32,7 @@ describe("Show User Profile Controller", () => {
 
   const userData: ICreateUserDTO = {
     name: "Test User",
-    email: "user@test.com",
+    email: "user-show@test.com",
     password: "123456"
   }
 
