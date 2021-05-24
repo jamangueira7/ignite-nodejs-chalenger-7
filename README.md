@@ -10,7 +10,7 @@
 <br>
 
 
-## Ignite Node.js - Sexto desafio
+## Ignite Node.js - Setimo desafio
 
 ## 🚀 Tecnologias
 
@@ -25,9 +25,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Projeto FinAPI é uma API que cadastrar usuarios e cria uma sessão do usuario para e mostra todas as operações financeiras desse usuario.
-O objetivo é criar testes unitários para cobrir todo o codigo.
+O objetivo é criar testes unitários e de integração para cobrir todo o codigo.
 
-Descrição do desafio [Ignite](https://www.notion.so/Desafio-01-Testes-unit-rios-0321db2af07e4b48a85a1e4e360fcd11)
+Descrição do desafio [Ignite](https://www.notion.so/Desafio-02-Testes-de-integra-o-70a8af48044d444cb1d2c1fa00056958)
 
 
 Resolulção do teste.
